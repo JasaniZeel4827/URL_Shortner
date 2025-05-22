@@ -5,3 +5,8 @@ import UrlModel from "../models/short_url.model.js"
 export const findUserByEmail = async (email) => {
     return await User.findOne({email})
 }
+
+
+export const findUserByEmailByPassword = async (email) => {
+    return await User.findOne({email}).select('+password')
+}
