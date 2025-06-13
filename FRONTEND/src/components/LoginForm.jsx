@@ -92,4 +92,3 @@ const LoginForm = ({ state }) => {
     );
 };
 
-export default LoginForm;
