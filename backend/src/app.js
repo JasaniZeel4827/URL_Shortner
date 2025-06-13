@@ -16,8 +16,7 @@ dotenv.config("./.env")
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:5173', // your React app
-    credentials: true // 👈 this allows cookies to be sent
+    origin: 'http://localhost:5173'
 }));
 
 app.use(express.json())
@@ -38,4 +37,4 @@ app.listen(3000,()=>{
     console.log("Server is running on http://localhost:3000");
 })
 
-// GET - Redirection 
+
