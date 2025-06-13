@@ -6,15 +6,16 @@ const Navbar = () => {
     <nav className="bg-white border border-b-black">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          
+          {/* Left side - App Name */}
           <div className="flex items-center">
             <Link to="/" className="text-xl font-bold text-gray-800">
               URL Shortener
             </Link>
           </div>
           
+          {/* Right side - Auth buttons */}
           <div className="flex items-center">
-            {(true) ? (
+            {/* {(true) ? (
               <div className="flex items-center space-x-4">
                 <span className="text-gray-700">Welcome, {userName || 'User'}</span>
                 <button
@@ -31,7 +32,7 @@ const Navbar = () => {
               >
                 Login
               </Link>
-            )}
+            )} */}
           </div>
         </div>
       </div>
