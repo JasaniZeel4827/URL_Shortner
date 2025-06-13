@@ -28,7 +28,7 @@ const UrlForm = () => {
     navigator.clipboard.writeText(shortUrl);
     setCopied(true);
     
-    // Reset the copied state after 2 seconds
+   
     setTimeout(() => {
       setCopied(false);
     }, 2000);
